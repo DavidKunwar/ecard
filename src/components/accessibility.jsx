@@ -14,7 +14,7 @@ function Accessibility(){
       <Stack className='button-group1' direction='row' spacing={2} >
         <Button href='tel:+919810318660' target='_blank' color='success' variant='contained' startIcon={<PhoneIcon />} >Call</Button>
         <Button href='https://wa.me/919810318660' target='_blank' color='success' variant='contained' startIcon={<WhatsAppIcon />} >Whatsapp</Button>
-        <Button target='_blank' color='success' variant='contained' startIcon={<LocationOnIcon />} >Direction</Button>
+        <Button href={`https://www.google.com/maps?q=28.6735963,77.1753279&z=17&hl=en`} target='_blank' color='success' variant='contained' startIcon={<LocationOnIcon />} >Direction</Button>
       </Stack>
       <Stack className='button-group1' direction='row' spacing={2} >
         <Button href='Mailto:astrosolution5231@gmail.com' target='_blank' color='success' variant='contained' startIcon={<EmailIcon />} >Email</Button>

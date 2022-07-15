@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 
 function ProductCard(props){
 
+  const message = encodeURI('hfkj sdhkjf jsdfhkj')
     return (
         <Card sx={{ maxWidth: 1000 }}>
       <CardMedia
@@ -25,8 +26,7 @@ function ProductCard(props){
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button href={`https://wa.me/919810318660?text=${message}`} size="large">Make an Appointment</Button>
       </CardActions>
     </Card>
     )
