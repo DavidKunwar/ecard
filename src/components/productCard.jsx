@@ -6,11 +6,11 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
-function ProductCard(props){
+function ProductCard(props) {
 
-  const message = encodeURI('hfkj sdhkjf jsdfhkj')
-    return (
-        <Card sx={{ maxWidth: 1000 }}>
+  const message = encodeURI('')
+  return (
+    <Card sx={{ maxWidth: 1000 }}>
       <CardMedia
         component="img"
         height="250"
@@ -29,7 +29,7 @@ function ProductCard(props){
         <Button href={`https://wa.me/919810318660?text=${message}`} size="large">Make an Appointment</Button>
       </CardActions>
     </Card>
-    )
+  )
 }
 
 export default ProductCard
