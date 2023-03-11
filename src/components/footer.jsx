@@ -95,6 +95,18 @@ function Footer() {
     const [showProgress, setShowProgress] = useState(false)
     const [helperText, setHelperText] = useState('')
 
+    function onPlaceInputChange(value) {
+        console.log(value)
+        setInput((prevValue) => {
+            return {
+                ...prevValue,
+                "placeOfBirth": value[0].name
+            }
+        })
+
+        console.log(input)
+    }
+
     function onInputChange(event) {
         setInput((prevValue) => {
             return {
@@ -139,19 +151,14 @@ function Footer() {
                 <Dropdown
                     isSearchable
                     isMulti
-                    placeHolder="Select..."
+                    placeHolder="Place of Birth"
                     options={options}
-                    onChange={(value) => console.log(value)}
+                    // onChange={(value) => console.log(value)}
+                    onChange={onPlaceInputChange}
                 />
                 <input onChange={onInputChange} name='name' value={input.name} type="text" placeholder='Name' />
                 <input onChange={onInputChange} name='dateOfBirth' value={input.dateOfBirth} type="date" placeholder='Date of Birth' />
-                <input onChange={onInputChange} name='placeOfBirth' value={input.placeOfBirth} type="text" placeholder='Place of Birth' />
-                <select onChange={onInputChange} name='placeOfBirth' value={input.placeOfBirth}>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="opel">Opel</option>
-                    <option value="audi">Audi</option>
-                </select>
+                {/* <input onChange={onInputChange} name='placeOfBirth' value={input.placeOfBirth} type="text" placeholder='Place of Birth' /> */}
                 <input onChange={onInputChange} name='timeOfBirth' value={input.timeOfBirth} type="time" placeholder='Time of Birth' />
                 <input onChange={onInputChange} name='phoneNumber' value={input.phoneNumber} type="tel" placeholder='Phone Number' />
                 <button type="submit">Send</button>

@@ -26,6 +26,10 @@ body {
   background-size: cover;
 }
 
+.accessibility {
+  margin: 70px auto;
+}
+
 .button-group1 {
   margin: auto;
   padding: 10px;
@@ -33,17 +37,19 @@ body {
 }
 
 .detailCard {
-  padding: 30px 1px 0;
+  /* padding: 30px 1px 0; */
 }
 
 .detail {
-  width: 70vw;
+  width: 90vw;
   margin: 8px auto;
   padding: 8px;
 }
 
 .detail p {
   font-weight: 900;
+  font-size: 18px;
+  letter-spacing: 1px;
 }
 
 .detailIcon {

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Detail(props){
+function Detail(props) {
     return (
         <>
             <div className='detail'>

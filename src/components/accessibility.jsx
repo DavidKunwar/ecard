@@ -7,10 +7,10 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import EmailIcon from '@mui/icons-material/Email';
 import PublicIcon from '@mui/icons-material/Public';
 
-function Accessibility(){
+function Accessibility() {
 
-    return (
-        <>
+  return (
+    <div className='accessibility'>
       <Stack className='button-group1' direction='row' spacing={2} >
         <Button href='tel:+919810318660' target='_blank' color='success' variant='contained' startIcon={<PhoneIcon />} >Call</Button>
         <Button href='https://wa.me/919810318660' target='_blank' color='success' variant='contained' startIcon={<WhatsAppIcon />} >Whatsapp</Button>
@@ -20,8 +20,8 @@ function Accessibility(){
         <Button href='Mailto:astrosolution5231@gmail.com' target='_blank' color='success' variant='contained' startIcon={<EmailIcon />} >Email</Button>
         <Button target='_blank' href='http://www.astrosolutiononline.com/' color='success' variant='contained' startIcon={<PublicIcon />} >Website</Button>
       </Stack>
-        </>
-    )
+    </div>
+  )
 }
 
 export default Accessibility

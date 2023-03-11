@@ -14,7 +14,6 @@ function PaymentInfo() {
         form.appendChild(script);
         // document.body.appendChild(form);
         document.getElementById('payment-info').append(form)
-        console.log(document.body)
     }
 
     useEffect(() => {
