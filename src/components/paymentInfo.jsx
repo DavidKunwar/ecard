@@ -1,28 +1,30 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import SectionTitle from './sectionTitle'
-import InfoCard from './infoCard'
 
-function PaymentInfo(){
+function PaymentInfo() {
 
-    const info = [
-        {
-            field: 'Google Pay',
-            text:  '(+91) 9810318660',
-        },
-        {
-            field: 'Paytm',
-            text:  '(+91) 9810318660',
-        },
-        {
-            field: 'Phone Pay',
-            text:  '(+91) 9810318660',
-        },
-    ]
+    const loadScript = (src) => {
+        const form = document.createElement("form")
+        const script = document.createElement("script");
+        script.src = src;
+        script.setAttribute('data-payment_button_id', 'pl_LNPfJEzYT38wxO');
+        script.async = true
+        script.classList.add('payment-btn');
+
+        form.appendChild(script);
+        // document.body.appendChild(form);
+        document.getElementById('payment-info').append(form)
+        console.log(document.body)
+    }
+
+    useEffect(() => {
+        loadScript("https://checkout.razorpay.com/v1/payment-button.js")
+    })
 
     return (
         <div className='section' id='payment-info'>
             <SectionTitle title='Payment Info' />
-            <InfoCard info={info} />
+            <div></div>
         </div>
     )
 }

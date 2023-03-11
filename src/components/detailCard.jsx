@@ -9,7 +9,7 @@ function DetailCard(props) {
         <>
             <div className='detailCard'>
                 <Detail icon={<PhoneIcon fontSize='small' className='phoneIcon' />} text='(+91) - 9810318660' />
-                <Detail icon={<EmailIcon fontSize='small' className='emailIcon' />} text='astrosolution@gmail.com' />
+                <Detail icon={<EmailIcon fontSize='small' className='emailIcon' />} text='astrosolution5231@gmail.com' />
                 <Detail icon={<LocationOnIcon fontSize='small' className='locationIcon' />} text='L2/20A, Shastri Nagar, New Delhi - 110052' />
             </div>
         </>

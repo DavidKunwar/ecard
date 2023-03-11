@@ -2,11 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 @font-face {
@@ -14,7 +14,7 @@ body{
   src: url(./fonts/SamarkanNormal-Gg5D.ttf);
 }
 
-.header{
+.header {
   margin: 0 auto 20px;
   padding: 10vh 0;
   text-align: center;
@@ -26,27 +26,27 @@ body{
   background-size: cover;
 }
 
-.button-group1{
+.button-group1 {
   margin: auto;
   padding: 10px;
   justify-content: center;
 }
 
-.detailCard{
+.detailCard {
   padding: 30px 1px 0;
 }
 
-.detail{
+.detail {
   width: 70vw;
   margin: 8px auto;
   padding: 8px;
 }
 
-.detail p{
+.detail p {
   font-weight: 900;
 }
 
-.detailIcon{
+.detailIcon {
   position: relative;
   float: left;
   background-color: rgb(68, 138, 92);
@@ -56,47 +56,47 @@ body{
   border-radius: 100%;
 }
 
-.section{
+.section {
   text-align: center;
   width: 100vw;
 }
 
-.hr{
+.hr {
   border-top: 1px solid green;
   width: 60vw;
 }
 
-.section-head{
+.section-head {
   margin: 80px 0 50px;
 }
 
-.section-title{
-  font-family: 'Open Sans', sans-serif;
+.section-title {
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 2px;
 }
 
-.product-grid-container{
+.product-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   padding: 20px;
-  gap: 80px 80px ;
+  gap: 80px 80px;
 }
 
-.product-grid-item{
+.product-grid-item {
   box-shadow: 15px 15px 45px rgba(76, 76, 76, 0.4),
-              15px 15px 45px rgb(55, 54, 54, 0.4);
+    15px 15px 45px rgb(55, 54, 54, 0.4);
 }
 
-table{
+table {
   margin: 0 auto;
   width: 90vw;
 }
 
-table th{
+table th {
   padding: 0 30px 20px;
 }
 
-.footer{
+.footer {
   margin: 50px 0 0;
   padding: 50px 25px 30px;
   background-color: #032a0de1;
@@ -105,19 +105,18 @@ table th{
   max-width: 100vw;
 }
 
-.footer h3{
+.footer h3 {
   font-size: 30px;
   letter-spacing: 2px;
-
 }
 
-.footer p{
+.footer p {
   font-size: 16px;
   letter-spacing: 2px;
   line-height: 1.5;
 }
 
-.footer ul{
+.footer ul {
   list-style-type: none;
   margin: 40px 0 0 0;
   padding: 0;
@@ -125,34 +124,34 @@ table th{
   letter-spacing: 2px;
 }
 
-.footer ul li{
+.footer ul li {
   padding: 10px 0;
 }
 
-.footer ul li a{
+.footer ul li a {
   color: aliceblue;
   text-decoration: none;
 }
 
-.footer .copyright{
+.footer .copyright {
   letter-spacing: 1px;
   font-size: 15px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 200;
   text-align: center;
 }
-.footer hr{
+.footer hr {
   border: none;
   border-top: 1px solid #fff;
 }
 
-.bottom-hr{
+.bottom-hr {
   margin: 50px 0 0 0;
   border: none;
   border-top: 1px solid #fff;
 }
 
-.footer form{
+.footer form {
   margin: 40px 10px 10px;
   padding: 40px 20px;
   border-top: 1px solid #fff;
@@ -160,7 +159,8 @@ table th{
   border-radius: 20px;
 }
 
-.footer form input{
+.footer form input,
+select {
   background-color: rgba(204, 204, 204, 0.101);
   margin: 20px 0;
   padding: 20px 20px;
@@ -177,7 +177,7 @@ table th{
   opacity: 1;
 }
 
-.footer form textarea{
+.footer form textarea {
   background-color: rgba(204, 204, 204, 0.101);
   margin: 20px 0;
   padding: 20px 20px;
@@ -187,7 +187,7 @@ table th{
   width: calc(100% - 40px);
 }
 
-.footer form button{
+.footer form button {
   background-color: rgba(255, 255, 255, 0.396);
   margin: 20px 0;
   padding: 20px 20px;
@@ -197,4 +197,85 @@ table th{
   display: block;
   border: 1px solid #ccc;
   width: 100%;
+}
+
+/* Dropdown */
+
+.dropdown-container {
+  background-color: rgba(204, 204, 204, 0.101);
+  margin: 20px 0;
+  padding: 20px 20px;
+  color: aliceblue;
+  display: inline-block;
+  border: 1px solid #ccc;
+  width: calc(100% - 40px);
+}
+
+.dropdown-input {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.dropdown-menu {
+  position: absolute;
+  left: 53px;
+  margin: 20px 0;
+  transform: translateY(4px);
+  /* width: 100%; */
+  width: calc(100% - 109px);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: auto;
+  max-height: 250px;
+  background-color: rgb(70, 94, 78);
+  z-index: 99;
+}
+
+.dropdown-item {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dropdown-item:hover {
+  background-color: #9fc3f870;
+}
+
+.dropdown-item.selected {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.dropdown-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.dropdown-tag-item {
+  background-color: #ddd;
+  padding: 2px 4px;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown-tag-close {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  padding: 5px;
+  background-color: rgb(70, 94, 78);
+}
+
+.search-box input {
+  width: 100% !important;
+  box-sizing: border-box;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
