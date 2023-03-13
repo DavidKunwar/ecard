@@ -26,6 +26,17 @@ body {
   background-size: cover;
 }
 
+.header img {
+  /* float: left; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 14px 0 0 24px;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+}
+
 .accessibility {
   margin: 70px auto;
 }
@@ -191,6 +202,24 @@ select {
   display: inline-block;
   border: 1px solid #ccc;
   width: calc(100% - 40px);
+}
+
+input[type="time"]:before {
+  content: "Time of Birth";
+  width: 70px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #ccc;
+  opacity: 1;
+}
+
+input[type="date"]:before {
+  content: "Date of Birth";
+  width: 70px;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #ccc;
+  opacity: 1;
 }
 
 .footer form button {

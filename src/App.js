@@ -6,15 +6,15 @@ import ProductAndServices from "./components/productAndServices";
 import Accessibility from "./components/accessibility";
 import PaymentInfo from "./components/paymentInfo";
 import Footer from "./components/footer";
+import mataCover from "./Images/mataji.jpeg";
 
 function App() {
   return (
     <>
       <div className="header" id="header">
+        <img src={mataCover} alt="" />
         ASTROSOLUTIONONLINE
-        {/* <div className='topPhoto' >ASTROSOLUTION</div> */}
-        {/* <img className='topPhoto' src={title} alt='topPhoto' /> */}
-        {/* <span>ASTROSOLUTION</span> */}
+        {/* <img src={mataCover} /> */}
       </div>
       <Accessibility />
       <DetailCard />
