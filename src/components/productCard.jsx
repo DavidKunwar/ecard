@@ -21,7 +21,7 @@ function ProductCard(props) {
         <Typography gutterBottom variant="h5" component="div">
           {props.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body1" color="text.secondary">
           {props.desc}
         </Typography>
       </CardContent>

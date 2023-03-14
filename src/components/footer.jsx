@@ -47,7 +47,9 @@ function Footer() {
     return (
         <div className='footer'>
             <h3>ASTROSOLUTION</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ipsum.</p>
+            <p>
+                Got questions to ask, just fill the details below and I will reachout.
+            </p>
             <hr />
             <ul>
                 <li><a href="#header">Home</a></li>

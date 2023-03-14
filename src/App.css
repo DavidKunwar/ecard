@@ -92,6 +92,11 @@ body {
   letter-spacing: 2px;
 }
 
+#about p {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
 .product-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
