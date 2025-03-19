@@ -33,7 +33,7 @@ function Footer() {
         setHelperText('')
         setShowProgress(true)
 
-        emailjs.sendForm('service_k7l0gwp', 'template_qhlqa84', event.target, '_fIjg0s5Kw_TMhSR5')
+        emailjs.sendForm('service_u3nrgp4', 'template_qhlqa84', event.target, '_fIjg0s5Kw_TMhSR5')
             .then(() => {
                 setHelperText('Thank You ! We will get in touch soon.')
                 setShowProgress(false)
